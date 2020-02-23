@@ -181,12 +181,10 @@ header .l_header__nav {
     position: fixed;
     top: 0;
     right: 0;
-    pointer-events: none;
   }
 
 header .l_header__nav.is-active {
     background-color: #000;
-    pointer-events: auto;
   }
 
 header .l_header__nav--btn {
@@ -194,7 +192,6 @@ header .l_header__nav--btn {
     margin: 10px 10px 0 0;
     padding: 2.5vw;
     display: inline-block;
-    pointer-events: auto;
   }
 
 header .l_header__nav--btn a, .l_header__nav--btn span {
@@ -288,10 +285,4 @@ h2 img{
   height: 59px;
   margin-top: 50px;
     /* height: 0.5vw; */
-}
-
-section p{
-  color: darkgoldenrod;
-  font-size: 11px;
-
 }
