@@ -23,29 +23,15 @@ img {
 /*ヘッダー
 ------------------------------*/
 
-header {}
-
 header .l_header__box {
   background-image: url(../images/forest_01.png);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: 100%; */
-}
-
-header .l_header__logo {
-  max-width: 204px;
-  margin: 0 auto;
-  transform: translate(0, 70%);
 }
 
 header .l_header__sns {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
 }
 
 header .l_header__sns li {
@@ -60,6 +46,23 @@ header .l_header__sns li img {
   min-width: 54px;
 }
 
+header .l_header__small {
+  display: flex;
+  align-items: center;
+}
+header .l_header__small li {
+  border-right: 1px solid #fff;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+header .l_header__small li:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+header .l_header__small li a {
+  color: #fff;
+}
 
 /*ナビゲージョン
 ------------------------------*/
@@ -89,6 +92,60 @@ section p {
 
 /*フッター
 ------------------------------*/
+
+/* ***********************************************
+   PC用
+*************************************************/
+
+@media screen and (min-width:769px) {
+  /* Header用
+  ------------------------------*/
+  header .l_header__logo {
+    max-width: 204px;
+    margin: 0 auto;
+    transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+  }
+  header .l_header__global {
+    width: 100%;
+    margin-top:120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+  header .l_header__global li{
+    margin-right: 40px;
+  }
+  header .l_header__global li:last-child{
+    margin-right: 0;
+  }
+  header .l_header__small {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    transform: translate(0, -130%);
+    -webkit-transform: translate(0, -130%);
+  }
+  header .l_header__sns {
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  header .l_header__nav--cont {
+    max-width: 1000px; 
+    margin: 0 auto;
+    position: relative;
+  }
+}
 
 
 /* ***********************************************
@@ -120,33 +177,15 @@ section p {
   }
   header .l_header__global li a {
     display: block;
-    text-decoration: none;
   }
   header .l_header__sns {
     margin-top: 30px;
-    display: flex;
     justify-content: center;
-    align-items: center;
   }
   header .l_header__small {
     margin-top: 30px;
-    display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 12px;
-  }
-  header .l_header__small li {
-    border-right: 1px solid #fff;
-    margin-right: 10px;
-    padding-right: 10px;
-  }
-  header .l_header__small li:last-child {
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
-  }
-  header .l_header__small li a {
-    text-decoration: none;
   }
 
   /* ハンバーガーメニュー(SP用)
@@ -248,9 +287,29 @@ section p {
     /* height: 0.5vw; */
   }
 
+  section {
+    margin: 0  auto;
+  }
+
   section p {
     color: darkgoldenrod;
     font-size: 11px;
+    line-height: 25px;
   }
 
 }
+
+  /* 主要コンテンツ
+  ------------------------------*/
+
+  section ul img{
+    border-radius: 50%;
+    margin-bottom: 40px;
+  }
+
+  /* トピックス
+  ------------------------------*/
+  h3 img{
+    text-align: center;
+    height: 40px;
+  }
