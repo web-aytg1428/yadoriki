@@ -98,7 +98,7 @@ section p {
 *************************************************/
 
 @media screen and (min-width:769px) {
-  /* Header用
+  /* Header
   ------------------------------*/
   header .l_header__logo {
     max-width: 204px;
@@ -145,6 +145,12 @@ section p {
     margin: 0 auto;
     position: relative;
   }
+
+  /* コンテンツ
+  ------------------------------*/
+  .l-main{
+    margin-top: 150px;
+  }
 }
 
 
@@ -153,7 +159,7 @@ section p {
 *************************************************/
 
 @media screen and (max-width:768px) {
-  /* Header用
+  /* Header
   ------------------------------*/
   header .l_header__box {
     background-position: left top;
