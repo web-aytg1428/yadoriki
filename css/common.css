@@ -151,6 +151,12 @@ section p {
   .l-main{
     margin-top: 150px;
   }
+  /* 店舗挨拶文
+  ------------------------------*/
+  .p-top__lead h2 img{
+    max-width: 312px;
+    margin: 40px auto 0;
+  }
 }
 
 
