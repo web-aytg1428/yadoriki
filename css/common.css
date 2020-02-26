@@ -75,13 +75,7 @@ main {
   text-align: center;
 }
 
-section {
-  margin: 0 auto;
-}
 
-section p {
-  display: inline;
-}
 
     /* 主要コンテンツ
   ------------------------------*/
@@ -117,6 +111,16 @@ section p {
   .p-top__menu ul li:last-child a span{
     line-height: 40px;
   }
+
+ 
+ /*挨拶文
+------------------------------*/
+  .p-top__lead p {
+    color:#7b7b7b;
+    font-size: 11px;
+    line-height: 25px;
+  }
+
 
 
 /*フッター
@@ -163,6 +167,25 @@ footer .l_footer__box {
   header .l_header__global li:last-child{
     margin-right: 0;
   }
+
+  header .l_header__global a:link {
+    color: #7d4912;    
+  }
+
+  header .l_header__global a:visited {
+    color: #7d4912;    
+  }
+
+  header .l_header__global a:hover {
+    color: #7d4912; 
+    text-decoration: underline;   
+  }
+  header .l_header__global a:active {
+    color: #7d4912;    
+    text-decoration: underline;
+  }
+
+
   header .l_header__small {
     justify-content: flex-end;
     position: absolute;
@@ -338,11 +361,11 @@ footer .l_footer__box {
     /* height: 0.5vw; */
   }
 
-  .p-top__lead p {
+  /* .p-top__lead p {
     color:#7b7b7b;
     font-size: 11px;
     line-height: 25px;
-  }
+  } */
 
   /* Topics
   ------------------------------*/
