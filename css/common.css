@@ -71,14 +71,14 @@ header .l_header__small li a {
 /*メインコンテンツ
 ------------------------------*/
 
-main {
-  text-align: center;
-}
-
 
 
     /* 主要コンテンツ
   ------------------------------*/
+  .p-top__menu{
+    text-align: center;
+  }
+
   .p-top__menu ul{
     margin-top: 35px;
   }
@@ -115,10 +115,18 @@ main {
  
  /*挨拶文
 ------------------------------*/
+  .p-top__lead  {
+    text-align: center;
+  }
+
   .p-top__lead p {
     color:#7b7b7b;
     font-size: 11px;
     line-height: 25px;
+  }
+
+  .p-contact {
+    text-align: center;
   }
 
 
@@ -126,9 +134,12 @@ main {
 /*フッター
 ------------------------------*/
 footer .l_footer__box {
+  text-align: center;
+  color: #fff;
   background-image: url(../images/forest_03.png);
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: left top;
+  background-size: 100%;
 }
 
 
@@ -207,6 +218,8 @@ footer .l_footer__box {
     position: relative;
   }
 
+
+
   /* コンテンツ
   ------------------------------*/
   .l-main{
@@ -219,6 +232,190 @@ footer .l_footer__box {
     margin: 40px auto 0;
   }
 
+ /* メニュー
+  ------------------------------*/  
+.p-top__menu ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.p-top__menu ul li{
+margin-right: 20px;
+
+}
+
+.p-top__menu ul li:last-child{
+  margin-right: 0;
+  
+}
+
+.p-top__menu a{
+  display: block;
+}
+
+ /* Topics
+  ------------------------------*/ 
+  .l-section__topics{
+    max-width: 828px;
+    margin:0 auto 20px;
+    border-color: #7d4912;
+    border: solid 1px;
+  }
+
+  .l-section__topics h3 img{
+  max-width: 118px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.text_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.l-section__topics {
+  padding: 10px 0 30px;
+}
+
+.l-section__topics h3{
+  padding-left: 10px;
+}
+
+.p-top__topics{
+  width: 56%;
+  margin-top: 10px;
+  padding:0 4% 0 5%;
+  line-height: 1.3;
+}
+
+.p-top__topics dl {
+  margin-bottom: 20px;
+ }
+
+ .p-top__topics dl:last-child {
+  margin-bottom: 0;
+ }
+
+ .p-top__topics dl dt{
+  margin-bottom: 10px;
+ }
+
+.p-top__topics dl dt span{
+ display: inline-block;
+ max-width: 150px;
+ width: 100%;
+ border: 1px #7d4912 solid;
+ text-align: center; 
+ margin-left: 10px;
+ padding: 5px 0;
+}
+
+.other{
+  width: 31%;
+  margin-right: 4%;
+}
+
+
+.more{
+  transform: translateY(160%) translateX(-20%);
+}
+
+
+
+.other .book{
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+
+
+.other a img{
+  max-width: 86px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+ /* Service
+  ------------------------------*/  
+  .m-ttl_basic{
+    text-align: center;
+  }
+  
+  .m-ttl_basic img{
+    max-width: 118px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .p_service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p_service p:last-child{
+    margin-left: 32px;
+  }
+
+  .p_service{
+    margin-bottom: 20px;
+  }
+ 
+
+ /* Contact Us
+  ------------------------------*/  
+ .l-section__contact_us h3 img{
+   max-width: 180px;
+ }
+
+ .p-contact {
+  display: block;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .p-contact li:last-child{
+   margin-top: 10px;
+   margin-bottom: 40px;
+ }
+
+/* footer
+  ------------------------------*/  
+  .l_footer__small{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+  }
+
+  .l_footer__small li{
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #7d4912;
+}
+
+.l_footer__small li:last-child{
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+  .l_footer__small a{
+    color: #7d4912;
+}
+
+.l_footer__box{
+  padding: 50px 20px;
+}
+
 }
 
 
@@ -227,6 +424,9 @@ footer .l_footer__box {
 *************************************************/
 
 @media screen and (max-width:768px) {
+  .m-ttl_basic{
+    text-align: center;
+  }
   /* Header
   ------------------------------*/
   header .l_header__box {
@@ -369,6 +569,7 @@ footer .l_footer__box {
 
   /* Topics
   ------------------------------*/
+
   .l-section__topics h3 img {
     text-align: center;
     width: 129px;
@@ -434,9 +635,11 @@ footer .l_footer__box {
   .l-section__service{
     padding: 10px 16px;
   }
+  .p_service {
+    text-align:center;
+  }
 
   .p_service img {
-    text-align: center;
     max-width: 400px;
     width: 100%;
     /* width: 129px;
